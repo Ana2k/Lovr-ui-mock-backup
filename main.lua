@@ -1,6 +1,6 @@
 -- NOTE: This demo app is currently completely unstructured, crude and lacks comments.
 -- This will be addressed. For the time being it's a testbed during development.
-
+require 'mousearm'
 UI = require "ui/ui"
 buf = "John"
 win2pos = lovr.math.newMat4( 0.1, 1.3, -1.3 )
@@ -75,7 +75,8 @@ some_list = { "fade", "wrong", "milky", "zinc", "doubt", "proud", "well-to-do",
 	"squalid", "second-hand", "domineering", "puzzled", "cloudy", "arrogant", "flat" }
 
 function lovr.load()
-	UI.Init()
+	-- UI.Init()
+	UI.Init(nil, nil, true, 0)
 	lovr.graphics.setBackgroundColor( 0.4, 0.4, 1 )
 	col_list = UI.GetColorNames()
 
