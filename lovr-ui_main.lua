@@ -144,7 +144,7 @@ function lovr.draw( pass )
 	pass:setColor( .2, .2, .2 )
 	pass:plane( 0, 0, 0, 25, 25, -math.pi / 2, 1, 0, 0, 'line', 50, 50 )
 
-	UI.NewFrame( pass )
+	UI.NewFrame(pass)
 
 	local lh_pose = lovr.math.newMat4( lovr.headset.getPose( "hand/left" ) )
 	lh_pose:rotate( -math.pi / 2, 1, 0, 0 )
