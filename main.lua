@@ -1,34 +1,37 @@
--- Starter code file for floating rectangle like shown in the lovr-ui
---**How to use:**
---  - Put the ui folder inside your project and require it: `UI = require "ui/ui"`
---  - Initialize the library by calling `UI.Init()` on `lovr.load()`
---  - Handle controller input by calling `UI.InputInfo()` on `lovr.update()`
-    --x works like the usual axis. 
-    --x positive brings right and negative brings left 
+require 'example'
+-- also does not work if the headset is set to false.
 
-    --y works like the usual axis. 
-    --y positive above and the negative one down
+-- this only works if the monado-service is running else gives an error
+-- and if i run the monado-service the visual elements are non accesible.
 
-    --z axis positive increase the font size and 
-    --z axis negative decreases the font size.
-    
-    --for all 
+-- require 'mousearm'
+--> Yes we cant use this with the example lua.
+--> not sure why but some things dont align.
+--?
 
--- code for basic shapes using lovr.-- to be put inside lovr.draw():
--- -- local t = lovr.headset.getTime()
--- pass:text('Ana fine',2,-2,-5)
--- -- Plane
--- local x, y, z = -.6, 1.7, -1.5
--- pass:setColor(.53, .522, .52)
--- --color set
--- pass:plane(x, y, z, 1, 1)
+-- advise from the team to 
 
--- using the rounded corner ui--> https://github.com/jmiskovic/chui
+-- something about not needing a mousearm possibly.
+-- so for now removing this. and focusing on getting example.lua functionality working.
 
+-- duality --> either example.lua works or mousearm.lua works.
+-- both not working together??
+-- then how do we get the example.lua to work inside our dashboard?
+-- and display the results?
+-- lets start by printing all the client values that example.lua is capable of 
+-- inside the terminal.
 
-
-require 'mousearm'
 UI = require "ui/ui"
+
+local ffi = require("ffi")
+
+-- Checking all the commands from example.lua
+print("Client Count",get_client_count())
+
+-- >> show this in text inside our UI dashboard.
+-->> first run the app to understand how to put a textbox under the current codes.
+-- how? 
+-- print("Client id access:",get_client_id_at_index(0))
 
 local dashboard_transform = lovr.math.newMat4( vec3( 0, 1.5, -1 ) )
 
@@ -71,12 +74,13 @@ function lovr.draw(pass)
     UI.Dummy(500,0)
     -- print("HARI 7")
     UI.SameLine()
-    print("HARI 8")
+    -- print("HARI 8")
     UI.ImageButton("monado_logo_no_bkg.png",64,64)
     -- print("HARI 9")
     UI.SameLine()
     -- print("HARI 10")
     UI.ImageButton("triple_dot (1).png",62,62)
+    -- UI.
     -- print("HARI 11")
     UI.End(pass)
     -- print("HARI 12")
