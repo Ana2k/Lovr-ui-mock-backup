@@ -36,8 +36,13 @@ Kind of like this.
  - I had a ton of learning and unlearning and doubting and redeeming myself done over this project.
  - Special thanks and mention go to the discord community of Monado and Lovr, the creator of Lovr- Bjorn , Lovr-UI and its creator - Immoratlx and defenitely
  - My mentor - Lubosz Sarnecki with whom i learnt a huge lot and manager - Frederic Plourde who made the overall journey very easy and fun to work with.
+ - There was also Ryan and Christopher Haag who helped me out along with many other people from the communities. Thanks a lot :)
+
+  
  - Feel free to clone this, star, this or fork the same and improve on this project.
- - Also if you are interested in Hard core VR join the monado community on discord : https://discord.gg/ZvsZ3kuP and check out the awesome lovr community : https://discord.gg/vvZdcTGj
+
+ ##Join VR heads.
+ - If you are interested in Hard core VR development join the monado community on discord : https://discord.gg/ZvsZ3kuP and check out the awesome lovr community : https://discord.gg/vvZdcTGj
 
 Thanks and Happy Hacking :)
 
