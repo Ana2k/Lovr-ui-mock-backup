@@ -41,7 +41,6 @@ Kind of like this.
   
  - Feel free to clone this, star, this or fork the same and improve on this project.
 
- ##Join VR heads.
  - If you are interested in Hard core VR development join the monado community on discord : https://discord.gg/ZvsZ3kuP and check out the awesome lovr community : https://discord.gg/vvZdcTGj
 
 Thanks and Happy Hacking :)
