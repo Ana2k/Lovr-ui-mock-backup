@@ -1,4 +1,4 @@
-# THE MONADO DASHBOARD. XROS Project 
+# MONADO IMMERSIVE DASHBOARD - An XROS Project 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## How should we run the dashboard on personal system?
 
